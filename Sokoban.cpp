@@ -244,9 +244,7 @@ void mem_step(Direction d){
 	
 	Next_y = worker_y + i; Next_x = worker_x + j;
 	NextNext_y = worker_y + 2 * i; NextNext_x = worker_x + 2 * j;
-	CBackup buffer(map[worker_y][worker_x], worker_y, worker_x,
-			           map[Next_y][Next_x], Next_y, Next_x,
-								 map[NextNext_y][NextNext_x], NextNext_y, NextNext_x);
+	CBackup buffer(map[worker_y][worker_x], worker_y, worker_x, map[Next_y][Next_x], Next_y, Next_x, map[NextNext_y][NextNext_x], NextNext_y, NextNext_x);
 	backup.push(buffer);
 }
 
